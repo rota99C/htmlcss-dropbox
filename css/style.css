@@ -8,6 +8,7 @@ body {
     background-color: blue;
 }
 
+/* header */
 
 header{
     height: 70px;
@@ -65,6 +66,9 @@ header{
     height: 100%;
 }
 
+/* main */
+
+/* slidshow */
 
 .slideshow {
     background-color: aqua;
@@ -80,7 +84,24 @@ header{
     margin: auto;
     height: 90%;
 }
-)
+
+.piani {
+    background-color: darkred;
+    width: 60%;
+    margin: auto;
+    height: 800px;
+
+}
+
+ .col-1, .col-2, .col-3{
+    width: calc(80% / 3);
+    height: 100%;
+    background-color: darkslateblue;
+    float: left;
+    margin: auto;
+}
+
+
 
 
 
