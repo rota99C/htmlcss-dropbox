@@ -139,8 +139,12 @@ nav ul li {
 #slideshow .img-slideshow {
 	width: 50%;
 	position: absolute;
-	bottom: -95px;
-	right: 40px;
+	bottom: 3210px;
+	right: 121px;
+}
+
+#slideshow img {
+	width: 100%;
 }
 
 #slideshow /* section1 */ .piani {
