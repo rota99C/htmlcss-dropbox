@@ -106,23 +106,44 @@ nav ul li {
 
 /* slidshow */
 
-.slideshow {
-	background-color: aqua;
-	width: 100%;
-	height: calc(100vh - 70px);
-	padding-top: 90px;
+#slideshow {
+	background-color: #b4d0e7;
+	padding-top: 80px;
+	padding-bottom: 90px;
+	position: relative;
 }
-
-.conteiner-slideshow {
-	background-color: darkmagenta;
+#slideshow .conteiner {
 	width: 80%;
 	margin: auto;
-	height: 90%;
 }
 
-/* section1 */
+#slideshow h1 {
+	font-size: 66px;
+	padding-top: 40px;
+}
 
-.piani {
+#slideshow p {
+	width: 360px;
+	margin-top: 45px;
+	margin-bottom: 39px;
+}
+
+#slideshow .inizia-prova {
+	background-color: #0061ff;
+	color: white;
+	padding: 7px 20px;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+#slideshow .img-slideshow {
+	width: 50%;
+	position: absolute;
+	bottom: -95px;
+	right: 40px;
+}
+
+#slideshow /* section1 */ .piani {
 	background-color: darkred;
 	width: 60%;
 	margin: auto;
