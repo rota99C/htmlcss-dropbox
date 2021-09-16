@@ -554,3 +554,94 @@ nav ul li {
 	transform: translate(-50%, -50%);
 	filter: invert();
 }
+
+.dropbox-azienda {
+	width: 100%;
+	height: 300px;
+	background-color: #b4d0e7;
+}
+
+.porta-dropbox {
+	width: 60%;
+	margin: auto;
+	height: 300px;
+	background-color: #b4d0e7;
+	position: relative;
+}
+
+.prova-gratuita {
+	position: absolute;
+	background-color: white;
+	right: 0px;
+	top: 117.78px;
+	padding: 7px 15px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.porta-dropbox h2 {
+	position: absolute;
+	top: 117.78px;
+	color: #61082b;
+}
+
+.domande {
+	width: 60%;
+	margin: auto;
+	padding: 80px 0;
+}
+
+.elenco-domande {
+	padding: 20px 0px;
+	border-bottom: 1px solid grey;
+	border-left: none;
+	border-right: none;
+	font-weight: bold;
+	padding-right: 20px;
+}
+
+.domande div:first-of-type {
+	border-top: 1px solid grey;
+}
+
+.domande h2 {
+	padding-bottom: 40px;
+}
+
+.elenco-domande i {
+	float: right;
+}
+
+footer {
+	background-color: black;
+	width: 100%;
+	height: 450px;
+	padding-top: 80px;
+	padding-right: 10%;
+	padding-left: 10%;
+	color: white;
+}
+
+footer div {
+	width: 20%;
+	float: left;
+}
+
+footer h3 {
+	padding-bottom: 20px;
+}
+
+footer ul li {
+	list-style: none;
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+
+footer hr {
+	width: 50%;
+	margin-top: 80PX;
+}
+
+footer form {
+	display: inline-block;
+}
