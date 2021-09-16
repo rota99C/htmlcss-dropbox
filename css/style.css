@@ -192,11 +192,15 @@ nav ul li {
 	margin: 20px 0;
 }
 
+.col-1 {
+	height: 836px;
+}
+
 .col-1,
 .col-2,
 .col-3 {
 	width: calc(94% / 3);
-	height: 100%;
+	height: 900px;
 	float: left;
 	margin: auto;
 	border: solid 1px gray;
@@ -254,7 +258,7 @@ nav ul li {
 	text-align: center;
 	border: solid 1px gray;
 	padding: 8px;
-	margin-top: 151px;
+	margin-top: 70px;
 }
 
 .enterprice {
@@ -308,7 +312,7 @@ nav ul li {
 
 .testo-partner {
 	height: 450px;
-	width: 439px;
+	width: 349px;
 	float: right;
 	padding: 30px;
 }
@@ -400,7 +404,49 @@ nav ul li {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: white;
+	filter: invert();
+}
+
+.asu {
+	position: relative;
+	background-color: #61082b;
+}
+
+.asu img {
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: invert();
+}
+
+.uf {
+	position: relative;
+	background-color: #0093ce;
+}
+
+.uf img {
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: invert();
+}
+
+.topps {
+	position: relative;
+	background-color: #ff1c1c;
+}
+
+.topps img {
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: invert();
 }
 
 .citazione {
@@ -429,5 +475,60 @@ nav ul li {
 	width: 217px;
 	height: 217px;
 	float: right;
-	background-color: green;
+}
+
+.world-bycicle {
+	position: relative;
+	background-color: #d5001f;
+}
+
+.world-bycicle img {
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: invert();
+}
+
+.hearst {
+	position: relative;
+	background-color: #b4d0e7;
+}
+
+.hearst img {
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: invert();
+}
+
+.lonely-palent {
+	position: relative;
+	background-color: #0d2481;
+}
+
+.lonely-palent img {
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: invert();
+}
+
+.clear-channel {
+	position: relative;
+	background-color: #ffd830;
+}
+
+.clear-channel img {
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: invert();
 }
