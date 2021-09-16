@@ -6,12 +6,14 @@
 }
 
 body {
-	background-color: blue;
+	background-color: white;
 }
 
 /* header */
 
 header {
+	position: fixed;
+	z-index: 1;
 	height: 70px;
 	width: 100%;
 	background-color: white;
@@ -109,8 +111,9 @@ nav ul li {
 #slideshow {
 	background-color: #b4d0e7;
 	padding-top: 80px;
-	padding-bottom: 90px;
+	padding-bottom: 68px;
 	position: relative;
+	margin-bottom: 150px;
 }
 #slideshow .conteiner {
 	width: 80%;
@@ -122,16 +125,16 @@ nav ul li {
 	padding-top: 40px;
 }
 
-#slideshow p {
+#slideshow p:first-of-type {
 	width: 360px;
 	margin-top: 45px;
 	margin-bottom: 39px;
 }
 
-#slideshow .inizia-prova {
+.inizia-prova {
 	background-color: #0061ff;
 	color: white;
-	padding: 7px 20px;
+	padding: 7px 15px;
 	text-decoration: none;
 	margin-top: 30px;
 }
@@ -139,88 +142,192 @@ nav ul li {
 #slideshow .img-slideshow {
 	width: 50%;
 	position: absolute;
-	bottom: 3210px;
-	right: 121px;
+	bottom: -51px;
+	right: 152px;
 }
 
 #slideshow img {
 	width: 100%;
 }
 
-#slideshow /* section1 */ .piani {
-	background-color: darkred;
+.annulla {
+	margin-bottom: 20px;
+	margin-top: 45px;
+}
+
+#slideshow a:last-of-type {
+	font-size: 30px;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+/* sezione piani */
+
+.piani {
+	margin-top: 20px;
 	width: 60%;
 	margin: auto;
-	height: 800px;
-	padding: 10px;
+	height: 890px;
+}
+
+.piani label {
+	margin-right: 10px;
+}
+
+.piani form {
+	margin-bottom: 30px;
+}
+
+.piani h2 {
+	margin-bottom: 50px;
+}
+
+.piani h3 {
+	margin-bottom: 10px;
+	font-size: 1.5em;
+}
+
+.piani h4 {
+	font-size: 1.2em;
+	margin: 20px 0;
 }
 
 .col-1,
 .col-2,
 .col-3 {
-	width: calc(80% / 3);
+	width: calc(94% / 3);
 	height: 100%;
-	background-color: darkslateblue;
 	float: left;
 	margin: auto;
+	border: solid 1px gray;
+	font-size: 0.8em;
+}
+
+.col-1 div:nth-child(2),
+.col-2 div:nth-child(2),
+.col-3 div:nth-child(2) {
+	padding: 20px;
+}
+
+.month {
+	color: gray;
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+
+.caratteristiche-piani li,
+.punti-salienti li {
+	margin-bottom: 20px;
+	list-style-type: none;
+}
+
+.punti-salienti li:before {
+	content: '✔';
+	color: #0061ff;
+	font-weight: 800;
+}
+
+.blue-text {
+	color: #0061ff;
+}
+
+.piani hr {
+	width: 20%;
+	opacity: 50%;
 }
 
 .col-1,
 .col-2 {
-	margin-right: 10%;
+	margin-right: 3%;
+}
+
+.piano-singolo,
+.piano-team {
+	text-align: center;
+	border-bottom: solid 1px gray;
+	padding: 8px;
 }
 
 .team {
 	width: 60%;
-	background-color: gold;
-	height: 20px;
 	margin: auto;
+	text-align: center;
+	border: solid 1px gray;
+	padding: 8px;
+	margin-top: 151px;
 }
 
 .enterprice {
 	width: 60%;
-	background-color: dodgerblue;
-	height: 162px;
 	margin: auto;
 	position: relative;
+	border: solid 1px gray;
+	border-top: none;
+	padding: 20px;
+	font-size: 0.8em;
+	margin-bottom: 120px;
+}
+
+.enterprice h3 {
+	font-size: 1.5em;
+	margin-bottom: 15px;
 }
 
 .contatta-ufficio {
 	position: absolute;
-	right: 45px;
-	bottom: 94px;
-	background-color: gray;
+	right: 20px;
+	bottom: 88px;
+	background-color: #0061ff;
+	color: white;
+	padding: 7px 15px;
+	text-decoration: none;
 	width: 25%;
-	height: 30px;
+	text-align: center;
+}
+
+.enterprice p:first-of-type {
+	margin-bottom: 25px;
 }
 
 /* section2 */
 
 .partner {
 	width: 60%;
-	height: 450px;
+	height: 460px;
 	margin: auto;
-	background-color: green;
 }
 
+.partner img {
+	width: 100%;
+}
 .immagine-partner {
-	height: 450px;
 	width: 460px;
-	background-color: grey;
 	float: left;
+	filter: sepia(40%);
 }
 
 .testo-partner {
 	height: 450px;
-	width: 229px;
-	background-color: hotpink;
+	width: 439px;
 	float: right;
+	padding: 30px;
+}
+
+.testo-partner h3 {
+	margin-bottom: 20px;
+}
+
+.testo-partner p,
+.trova-partner {
+	font-size: 0.8em;
+	margin-bottom: 20px;
 }
 
 .trova-partner {
-	height: 30px;
-	width: 50%;
-	background-color: indigo;
+	width: 40%;
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
 }
 
 /* section 3 */
@@ -228,22 +335,44 @@ nav ul li {
 .dropbox-business {
 	height: 1025px;
 	width: 60%;
-	background-color: lime;
 	margin: auto;
+}
+
+.dropbox-business img {
+	width: 100%;
 }
 
 .riga-1 {
 	height: 492.5px;
 	width: calc(100% / 3);
-	background-color: magenta;
 	float: left;
+	padding: 10px;
 }
+
+.riga-1 p {
+	font-size: 0.8em;
+	margin-top: 20px;
+	padding-right: 20px;
+}
+
+/* sezione team */
 
 .dropbox-team-titolo {
 	width: 60%;
-	height: 250px;
-	background-color: mediumslateblue;
+	height: 160px;
 	margin: auto;
+}
+
+.dropbox-team-titolo h2 {
+	margin-bottom: 30px;
+}
+
+.dropbox-team-titolo a {
+	color: #0061ff;
+}
+
+.dropbox-team-titolo a:visited {
+	color: #0061ff;
 }
 
 .dropbox-team {
@@ -257,6 +386,21 @@ nav ul li {
 	height: 100%;
 	background-color: papayawhip;
 	float: left;
+}
+
+.designit {
+	position: relative;
+	background-color: #a2d39b;
+	border: solid 10px #e5e5e5;
+}
+
+.designit img {
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
 }
 
 .citazione {
@@ -278,7 +422,6 @@ nav ul li {
 	width: 217px;
 	height: 217px;
 	float: left;
-	background-color: yellow;
 }
 
 .team-1 div:nth-child(even),
