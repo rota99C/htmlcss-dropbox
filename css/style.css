@@ -2,7 +2,16 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+/* font */
+body {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8em;
+}
+
+h3 {
+	font-size: 1.5em;
 }
 
 .clearfix::after {
@@ -41,25 +50,22 @@
 }
 
 .bottone-blu {
-	background-color: #0061ff;
-	padding: 7px 15px;
+	background-color: rgb(0, 97, 255);
+	padding: 7px 12px;
 	color: white;
 }
 
 .bottone-blu:visited {
-	color: white;
+	color: rgb(255, 255, 255);
 }
 
-.font-08em {
-	font-size: 0.8em;
-}
 /* header */
 
 header {
 	position: fixed;
 	z-index: 1;
 	height: 70px;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	padding: 0 10px;
 }
 
@@ -105,11 +111,11 @@ header a {
 }
 
 header li a:hover {
-	color: #0061ff;
+	color: rgb(0, 97, 255);
 }
 
 header a:visited {
-	color: black;
+	color: rgb(0, 0, 0);
 }
 
 .tendina-supporto ul li {
@@ -119,7 +125,7 @@ header a:visited {
 .tendina-supporto:hover ul {
 	display: block;
 	position: absolute;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 }
 
 .tendina-supporto:hover ul li {
@@ -131,7 +137,7 @@ header a:visited {
 /* slideshow */
 
 #slideshow {
-	background-color: #b4d0e7;
+	background-color: rgb(180, 208, 231);
 	padding-top: 80px;
 	padding-bottom: 68px;
 	position: relative;
@@ -175,7 +181,7 @@ header a:visited {
 	font-size: 30px;
 	text-decoration: none;
 	margin-top: 30px;
-	color: black;
+	color: rgb(0, 0, 0);
 }
 
 /* sezione piani */
@@ -200,7 +206,6 @@ header a:visited {
 
 #piani h3 {
 	margin-bottom: 10px;
-	font-size: 1.5em;
 }
 
 #piani h4 {
@@ -214,7 +219,7 @@ header a:visited {
 	width: calc(94% / 3);
 	height: 900px;
 	margin: auto;
-	border: solid 1px gray;
+	border: solid 1px rgb(128, 128, 128);
 }
 
 .col-1 div:nth-child(2),
@@ -229,7 +234,7 @@ header a:visited {
 }
 
 .month {
-	color: gray;
+	color: rgb(128, 128, 128);
 	margin-top: 8px;
 	margin-bottom: 16px;
 }
@@ -242,12 +247,12 @@ header a:visited {
 
 .punti-salienti li:before {
 	content: '✔';
-	color: #0061ff;
+	color: rgb(0, 97, 255);
 	font-weight: 800;
 }
 
 .blue-text {
-	color: #0061ff;
+	color: rgb(0, 97, 255);
 }
 
 #piani hr {
@@ -259,27 +264,26 @@ header a:visited {
 .piano-team,
 .team {
 	text-align: center;
-	border-bottom: solid 1px gray;
+	border-bottom: solid 1px rgb(128, 128, 128);
 	padding: 8px;
 }
 
 .team {
 	margin: auto;
-	border: solid 1px gray;
+	border: solid 1px rgb(128, 128, 128);
 	margin-top: 175px;
 }
 
 .enterprice {
 	margin: auto;
 	position: relative;
-	border: solid 1px gray;
+	border: solid 1px rgb(128, 128, 128);
 	border-top: none;
 	padding: 20px;
 	margin-bottom: 120px;
 }
 
 .enterprice h3 {
-	font-size: 1.5em;
 	margin-bottom: 15px;
 }
 
@@ -296,7 +300,7 @@ header a:visited {
 }
 
 .contatta-ufficio a:visited {
-	color: white;
+	color: rgb(255, 255, 255);
 }
 
 .enterprice p:first-of-type {
@@ -332,9 +336,17 @@ header a:visited {
 
 .trova-partner {
 	width: 40%;
-	border: 1px solid black;
+	border: 1px solid rgb(0, 0, 0);
 	text-align: center;
 	padding: 5px;
+}
+
+.trova-partner a {
+	text-decoration: none;
+}
+
+.trova-partner a:visited {
+	color: rgb(0, 0, 0);
 }
 
 /* section 3 */
@@ -367,20 +379,20 @@ header a:visited {
 }
 
 .dropbox-team-titolo a {
-	color: #0061ff;
+	color: rgb(0, 97, 255);
 }
 
 .dropbox-team-titolo a:visited {
-	color: #0061ff;
+	color: rgb(0, 97, 255);
 }
 
 .dropbox-team {
 	height: 434px;
 }
 
-.team-1 {
+.team-1,
+.team-2 {
 	width: 434px;
-	background-color: papayawhip;
 }
 
 .team-1 img,
@@ -389,31 +401,36 @@ header a:visited {
 	filter: invert();
 }
 
+.team-1 div,
+.team-2 div {
+	width: 217px;
+	height: 217px;
+}
+
 .designit {
 	position: relative;
-	background-color: #a2d39b;
-	border: solid 10px #e5e5e5;
+	background-color: rgb(162, 211, 155);
+	border: solid 10px rgb(229, 229, 229);
 }
 
 .asu {
 	position: relative;
-	background-color: #61082b;
+	background-color: rgb(97, 8, 43);
 }
 
 .uf {
 	position: relative;
-	background-color: #0093ce;
+	background-color: rgb(0, 147, 206);
 }
 
 .topps {
 	position: relative;
-	background-color: #ff1c1c;
+	background-color: rgb(255, 28, 28);
 }
 
 .citazione {
 	height: 434px;
 	width: calc(100% - 868px);
-	float: left;
 	padding: 40px;
 }
 
@@ -422,98 +439,53 @@ header a:visited {
 	height: 75px;
 }
 
-.logo-citazioni img {
-	width: 100%;
-}
-
 .citazione hr {
 	width: 20%;
 	opacity: 50%;
 }
 
-.citazione p:first-of-type {
+.citazione p {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
-.team-2 {
-	width: 434px;
-	height: 100%;
-	background-color: papayawhip;
-	float: right;
-}
-
-.team-1 div:nth-child(odd),
-.team-2 div:nth-child(odd) {
-	width: 217px;
-	height: 217px;
-	float: left;
-}
-
-.team-1 div:nth-child(even),
-.team-2 div:nth-child(even) {
-	width: 217px;
-	height: 217px;
-	float: right;
-}
-
 .world-bycicle {
 	position: relative;
-	background-color: #d5001f;
-}
-
-.world-bycicle img {
-	width: 70%;
-	filter: invert();
+	background-color: rgb(213, 0, 31);
 }
 
 .hearst {
 	position: relative;
-	background-color: #b4d0e7;
-}
-
-.hearst img {
-	width: 70%;
-	filter: invert();
+	background-color: rgb(180, 208, 231);
 }
 
 .lonely-palent {
 	position: relative;
-	background-color: #0d2481;
-}
-
-.lonely-palent img {
-	width: 70%;
-	filter: invert();
+	background-color: rgb(13, 36, 129);
 }
 
 .clear-channel {
 	position: relative;
-	background-color: #ffd830;
+	background-color: rgb(255, 216, 48);
 }
 
-.clear-channel img {
-	width: 70%;
-	filter: invert();
-}
+/* sezione */
 
 .dropbox-azienda {
-	width: 100%;
 	height: 300px;
-	background-color: #b4d0e7;
+	background-color: rgb(180, 208, 231);
 }
 
 .porta-dropbox {
-	width: 60%;
 	margin: auto;
 	height: 300px;
-	background-color: #b4d0e7;
+	background-color: rgb(180, 208, 231);
 	position: relative;
 }
 
 .prova-gratuita {
 	position: absolute;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	right: 0px;
 	top: 117.78px;
 	padding: 7px 15px;
@@ -523,18 +495,19 @@ header a:visited {
 .porta-dropbox h2 {
 	position: absolute;
 	top: 117.78px;
-	color: #61082b;
+	color: rgb(97, 8, 43);
 }
 
+/* sezione domande frequenti */
+
 .domande {
-	width: 60%;
 	margin: auto;
 	padding: 80px 0;
 }
 
 .elenco-domande {
 	padding: 20px 0px;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid rgb(128, 128, 128);
 	border-left: none;
 	border-right: none;
 	font-weight: bold;
@@ -542,15 +515,11 @@ header a:visited {
 }
 
 .domande div:first-of-type {
-	border-top: 1px solid grey;
+	border-top: 1px solid rgb(128, 128, 128);
 }
 
 .domande h2 {
 	padding-bottom: 40px;
-}
-
-.elenco-domande i {
-	float: right;
 }
 
 .elenco-domande p {
@@ -560,7 +529,7 @@ header a:visited {
 }
 
 .elenco-domande:hover {
-	height: 150px;
+	height: 170px;
 	transition: 3s ease 0s;
 }
 
@@ -575,18 +544,16 @@ header a:visited {
 /* footer */
 
 footer {
-	background-color: black;
-	width: 100%;
+	background-color: rgb(0, 0, 0);
 	height: 450px;
 	padding-top: 80px;
 	padding-right: 10%;
 	padding-left: 10%;
-	color: white;
+	color: rgb(255, 255, 255);
 }
 
 footer div div {
 	width: 20%;
-	float: left;
 }
 
 footer h3 {
@@ -596,6 +563,14 @@ footer h3 {
 footer ul li {
 	list-style: none;
 	margin-bottom: 10px;
+}
+
+footer ul li a {
+	text-decoration: none;
+}
+
+footer ul li a:visited {
+	color: rgb(255, 255, 255);
 }
 
 footer hr {
@@ -608,9 +583,9 @@ footer form {
 }
 
 footer form select {
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	border: none;
-	color: grey;
+	color: rgb(128, 128, 128);
 }
 
 .lingua {
